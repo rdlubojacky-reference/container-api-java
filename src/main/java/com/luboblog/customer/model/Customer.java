@@ -5,15 +5,24 @@ import org.springframework.data.annotation.Id;
 public class Customer {
 
     @Id
-    public int id;
+    private String id;
 
-    public String firstName;
-    public String lastName;
+    private String firstName;
+    private String lastName;
 
-    public Customer() {}
+    public String getFirstName() {
+        return this.firstName;
+    }
 
-    public Customer(String firstName, String lastName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
