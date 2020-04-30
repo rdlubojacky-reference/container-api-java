@@ -44,7 +44,6 @@ public class CustomerController {
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Customer> createCustomer(@RequestBody Customer customer) { 
-        log.info(customer.toString());
         Customer savedCustomer = repository.save(customer);
         log.info("saved customer = " + savedCustomer.toString());
         return new ResponseEntity<Customer>(repository.save(customer), HttpStatus.OK);
