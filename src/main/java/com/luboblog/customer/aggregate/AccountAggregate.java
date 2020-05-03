@@ -8,4 +8,10 @@ public class AccountAggregate {
 
     @AggregateIdentifier
     private String id;
+
+    private double accountBalance;
+
+    private String currency;
+
+    private String status;
 }
