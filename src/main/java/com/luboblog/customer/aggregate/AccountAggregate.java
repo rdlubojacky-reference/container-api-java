@@ -9,6 +9,7 @@ import org.axonframework.spring.stereotype.Aggregate;
 @Aggregate
 public class AccountAggregate {
 
+    // Primary ID
     @AggregateIdentifier
     private String id;
 
