@@ -24,6 +24,9 @@ dependencies {
 	implementation('org.axonframework:axon-spring-boot-starter:4.3.2') {
 		exclude group: 'org.axonframework', module: 'axon-server-connector'
 	}
+	implementation 'com.h2database:h2'
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.12'
 	
